@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':'.
+
+      |-----handy-ruler------------------------------------------------------|
+starpy: StarPy Asterisk Protocols for Twisted
+starpy: 
+starpy: StarPy is a Python + Twisted protocol that provides access to the
+starpy: Asterisk PBX's Manager Interface (AMI) and Fast Asterisk Gateway
+starpy: Interface (FastAGI).
+starpy:
+starpy: Homepage: http://www.vrplumber.com/programming/starpy/
+starpy:
+starpy:
+starpy:
+starpy:
