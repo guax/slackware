@@ -28,7 +28,7 @@
 
 PRGNAM=nodejs
 SRCNAM=node
-VERSION=${VERSION:-6.5.0}
+VERSION=${VERSION:-7.10.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_Guax}
 
