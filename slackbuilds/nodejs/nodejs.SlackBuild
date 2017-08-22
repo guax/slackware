@@ -28,7 +28,7 @@
 
 PRGNAM=nodejs
 SRCNAM=node
-VERSION=${VERSION:-7.10.0}
+VERSION=${VERSION:-8.4.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_Guax}
 
@@ -45,7 +45,7 @@ TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
-DOCS="AUTHORS CHANGELOG.md COLLABORATOR_GUIDE.md CONTRIBUTING.md GOVERNANCE.md LICENSE README.md ROADMAP.md WORKING_GROUPS.md"
+DOCS="AUTHORS CHANGELOG.md COLLABORATOR_GUIDE.md CONTRIBUTING.md GOVERNANCE.md LICENSE README.md"
 
 if [ "$ARCH" = "i486" ]; then
   SLKCFLAGS="-O2 -march=i486 -mtune=i686"
@@ -103,7 +103,7 @@ for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; r
 install -D -m 644 $CWD/npm.sh $PKG/usr/share/bash-completion/completions/npm
 
 ## Remove unneeded files.
-find $PKG/usr \( -name '.git*' \) -exec rm -f {} \;
+find $PKG/usr \( -name '.git*' -type f \) -exec rm -f {} \;
 
 ## Set NODE_PATH to look for globally installed modules.
 mkdir -p $PKG/etc/profile.d
